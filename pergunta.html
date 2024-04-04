@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você aceita?</title>
+    <link rel="stylesheet" href="pergunta.css">
+</head>
+<body>
+
+    <div class="conteudo">
+        <h2>Aceita namorar comigo?</h2>
+
+            <button class="btn" onclick="sim()">SIM</button>
+            <button class="btn" onmouseover="mover(this)" onclick="nao()">NÃO</button>
+
+        
+    </div>
+
+    <script>
+
+        function sim(){
+            alert('Parabéns, você fez a melhor escolha 😘​😎​😏​')
+            document.write('Aproveite a vibe maravilhosa que é estar namorando comigo ​👉 https://www.youtube.com/watch?v=MLUWyOLtvU0​')
+        }
+
+        function nao(){
+            alert('Erro!!! Tente novamente, sua resposta está incorreta ❌')
+            
+        }
+        function mover(x){
+            marginX = Math.floor(Math.random()*600)
+            marginY = Math.floor(Math.random()*600)
+
+            x.style.margin = marginY.toString() + 'px ' + marginX.toString() + 'px'
+        }
+    </script>
+
+</body>
+
+    
